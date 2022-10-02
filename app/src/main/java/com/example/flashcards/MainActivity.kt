@@ -21,6 +21,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddCardActivity::class.java)
             startActivity(intent)
         }
+        val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            val data: Intent? = result.data
+            if (data != null) { // Check that we have data returned
+                val string1 = data.getStringExtra("string1") // 'string1' needs to match the key we used when we put the string in the Intent
+                val string2 = data.getStringExtra("string2")
 
+                // Log the value of the strings for easier debugging
+                Log.i("MainActivity", "string1: $string1")
+                Log.i("MainActivity", "string2: $string2")
+            } else {
+                Log.i("MainActivity", "Returned null data from AddCardActivity")
+            }
+        }
     }
 }

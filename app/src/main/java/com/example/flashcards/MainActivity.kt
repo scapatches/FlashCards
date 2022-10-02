@@ -21,6 +21,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AddCardActivity::class.java)
             startActivity(intent)
         }
-        
+
     }
 }

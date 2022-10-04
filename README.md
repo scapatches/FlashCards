@@ -5,7 +5,7 @@ This add a flash card
 
 ### App Walk-though
 
-<img src="https://github.com/scapatches/FlashCards/blob/master/6vg2i8.gif" width=200><br>
+<img src="https://github.com/scapatches/FlashCards/blob/master/6vnktj.gif" width=200><br>
 
 
 ## Required

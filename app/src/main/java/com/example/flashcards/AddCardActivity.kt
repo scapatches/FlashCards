@@ -1,39 +1,41 @@
 package com.example.flashcards
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import com.example.flashcards.R.id.imageView2
-import com.example.flashcards.R.id.imageView3
+import android.util.Log
+import android.widget.EditText
+
+
+import android.widget.ImageView
+
+import androidx.activity.result.contract.ActivityResultContracts
+
 
 class AddCardActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        findViewById<EditText>(R.id.editTextTextPersonName).text.toString()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_card)
-        findViewById<View>(imageView2).setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        findViewById<View>(imageView3).setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            val data = Intent() // create a new Intent, this is where we will put our data
+        val questionEditText = findViewById<EditText>(R.id.FlashCard_questionEditText)
+        val answerEditText = findViewById<EditText>(R.id.FlashCard_answerEditText)
+        val saveButton = findViewById<ImageView>(R.id.save_button)
+        val cancelb = findViewById<ImageView>(R.id.cancel_button)
 
-            data.putExtra(
-                "string1",
-                "some string"
-            ) // puts one string into the Intent, with the key as 'string1'
+        saveButton.setOnClickListener{
+            val questionSting = questionEditText.text.toString()
+            val answerString = answerEditText.text.toString()
 
-            data.putExtra(
-                "string2",
-                "another string"
-            ) // puts another string into the Intent, with the key as 'string2
-
-            setResult(RESULT_OK, data) // set result code and bundle data for response
+            val data = Intent()
+            data.putExtra("QUESTION_KEY", questionSting )
+            data.putExtra("ANSWER_KEY", answerString )
+            setResult(RESULT_OK, data)
 
             finish()
         }
+        cancelb.setOnClickListener{
+    finish()
+    }
     }
 }

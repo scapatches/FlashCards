@@ -12,6 +12,6 @@ Flashcard app you are able save multiple user created cards so that you can revi
 - [x] User can create muliple cards and browse through all created cards
 
 ## Optional
--[x] User can delete a card and no longer see it in their deck anymore
--[x] Flashcards are shown in random order instead of the order they were created in
+- [x] User can delete a card and no longer see it in their deck anymore
+- [x] Flashcards are shown in random order instead of the order they were created in
 

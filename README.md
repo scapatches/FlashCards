@@ -5,7 +5,7 @@ Flashcard app you are able save multiple user created cards so that you can revi
 
 ### App Walk-though
 
-<"https://github.com/scapatches/FlashCards/blob/e7803d944a62b5387fb9e8b74d0d995fa11af87f/gif.gif" width=200><br>
+<"https://github.com/scapatches/FlashCards/blob/e7803d944a62b5387fb9e8b74d0d995fa11af87f/gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.

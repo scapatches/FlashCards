@@ -5,7 +5,7 @@ This is a flashcard app
 
 ### App Walk-though
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
+<img src="https://github.com/scapatches/FlashCards/blob/master/6y6c0k.gif" width=200><br>
 
 
 

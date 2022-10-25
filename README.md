@@ -1,21 +1,18 @@
-## Lab 4
+## Lab 3
 
 ### App Description
-This is a Flashcard app with custom animations and styles!
+Flashcard app you are able save multiple user created cards so that you can revisit the app to review their cards.
+
 ### App Walk-though
 
-
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
-
+<img src="https://imgflip.com/gif/6wgayl.gif" width=200><br>
+<img src="https://github.com/scapatches/FlashCards/blob/master/gif.gif" width=200><br>
 
 ## Required
-- [x] User sees a transition animation when going from the main screen to the add card screen.
-- [x] User sees a reveal animation when the flashcard is tapped and the answer is shown
-- [x] User sees flashcards animating in / out when the 'next' button is tapped
+- [x] User can create a card and still see their created card when the app is relaunched.
+- [x] User can create muliple cards and browse through all created cards
 
 ## Optional
-- [] Extra styling is added!
-- [ ] User sees a countdown timer for each question
-- [ ] User sees a 'card flip' animation when the card is tapped
-- [ ] User sees a celebration animation with confetti when they answer a question correctly
+- [x] User can delete a card and no longer see it in their deck anymore
+- [x] Flashcards are shown in random order instead of the order they were created in
+
